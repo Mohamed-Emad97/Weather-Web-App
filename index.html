@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <!--Start Header Section-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <div class="center logo">
+                      <div class="img"><img src="images/logo.png" alt="logo-pic" class="w-100"></div>
+                      <div class="text">
+                          <h2 class="text-white">weather</h2>
+                          <span>tagline goes here</span>
+                      </div>
+                  </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Live Cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--End Header Section-->
+    <!--Start Home Section-->
+    <section id="home" class="pt-5 pb-5">
+        <div class="container">
+            <div class="search mb-5 mt-5 center">
+                <div class="center form w-100">
+                    <input type="text" id="search" class="p-2 w-100" placeholder="Search By Location">
+                    <div class="alert error-alert d-none w-100" id="error">Enter City Name</div>
+                </div>
+                <button id="searchBtn" class="btn btn-main rounded-pill p-2">Find</button>
+            </div>
+            <div class="row content">
+                <div class="col-md-6 mb-2">
+                    <div class="box">
+                        <div class="head mb-3 center">
+                            <p id="days" class="day"></p>
+                            <p id="date" class="date"></p>
+                        </div>
+                        <div class="body p-4">
+                            <p id="city"></p>
+                            <div class="center grade">
+                                <span id="degree"></span>
+                                <img class="w-25" id="weatherImg" src="" alt="weather-Img">
+                            </div>
+                            <p id="description" class=""></p>
+                            <ul>
+                                <li><span class="icon"><i class="fa-solid fa-umbrella"></i></span><span id="rainy"></span></li>
+                                <li><span class="icon"><i class="fa-solid fa-wind"></i></span><span id="wind"></span></li>
+                                <li><span class="icon"><i class="fa-solid fa-compass"></i></span><span id="compass"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                   <div class="box text-center">
+                     <div class="nextHead p-1">
+                        <p id="next-day" class="day"></p>
+                     </div>
+                     <div class="body p-3">
+                        <img class="w-50" src="" id="nextImg" alt="day-2-pic">
+                        <p id="nextDegree"></p>
+                        <span id="minDegree"></span>
+                        <p id="next-description"></p>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <div class="box text-center">
+                        <div class="nextHead p-1">
+                           <p id="next-day-2" class="day"></p>
+                        </div>
+                        <div class="body p-3">
+                           <img class="w-50" src="" id="nextImg-1" alt="day-3-pic">
+                           <p id="nextDegree-2"></p>
+                           <span id="minDegree-2"></span>
+                           <p id="next-description-2"></p>
+                        </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Home Section-->
+    <!--Start Footer Section-->
+    <footer class="pt-5 pb-5">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-8 mb-3">
+                    <div class="sub center">
+                        <input type="email" name="email" class="w-75 p-2" placeholder="Enter Your E-mail To Subscribe ">
+                        <button class="btn btn-main rounded-pill p-2">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                   <ul class="social center">
+                       <li><span class="facebook"><i class="fa-brands fa-facebook"></i></span></li>
+                       <li><span class="twitter"><i class="fa-brands fa-twitter"></i></span></li>
+                       <li><span class="google"><i class="fa-brands fa-google-plus-g"></i></span></li>
+                       <li><span class="pinterest"><i class="fa-brands fa-pinterest"></i></span></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="text text-white">
+                <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer Section-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
